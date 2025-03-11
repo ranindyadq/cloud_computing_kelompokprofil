@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+header {
+    background: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.logo-container img {
+    max-height: 60px;
+    width: auto;
+}
+.logo-container span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.divider {
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px auto;
+}
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border: 1px solid #e0e0e0;
+}
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.profile-card img {
+    width: 140px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #0056b3;
+}
+.profile-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.profile-card .nim {
+    font-weight: bold;
+    color: #555;
+}
+.profile-card p {
+    color: #666;
+    font-size: 14px;
+}
+.social-links {
+    margin-top: 10px;
+}
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+    color: #0056b3;
+    transition: transform 0.3s, color 0.3s;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+.hero-brone {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 150px; 
+    opacity: 0.8; 
+    z-index: -1; 
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
